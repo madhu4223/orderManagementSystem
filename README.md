@@ -13,6 +13,9 @@ The app will build and automatically open browser and navigate to `http://localh
 
 if not just open the browser manually and navigate to `http://localhost:4200/`.
 
+To Login Username : navtech@gmail.com  password: navtech@1234
+          
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
