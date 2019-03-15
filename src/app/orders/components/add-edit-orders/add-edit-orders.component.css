@@ -1,0 +1,16 @@
+.modal-backdrop{
+        z-index: 0;
+        transition: width 0s;
+        transition-delay: 20s;
+        transition-timing-function:ease-in;
+}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:block;overflow:hidden;outline:0}
+.modal-dialog{
+/* height: 80% !important ; */
+/* overflow: scroll !important; */
+}
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    opacity: .75;
+    outline: none;
+}

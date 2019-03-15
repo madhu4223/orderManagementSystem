@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-primary">Login</h1>
+    &nbsp;
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="emailid" id="email" [(ngModel)]="email"  required>
+      </div>
+      <div class="form-group">
+        <label for="name">Password</label>
+        <input type="password" class="form-control" name="passwd " id="password" [(ngModel)]="password" required>
+        
+        <div class="form-group checkbox">
+          <label><input type="checkbox" (change)="onCheckBox($event)" >Remember Me</label>
+        </div>
+      </div>
+ 
+      <button type="submit" class="btn btn-success" (click)="onSubmit()" >Submit</button>
+ 
+    </form>
+</div>

@@ -1,0 +1,17 @@
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+.container{
+    max-width: 30%;
+    padding:  4%
+}
+.form-group{
+    margin-bottom: 5%
+}
+.btn{
+    float: right;
+}
+.checkbox{
+    margin-top: 5% !important
+}

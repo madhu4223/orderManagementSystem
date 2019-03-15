@@ -1,0 +1,46 @@
+<div class="container">
+  <br><br><br>
+  <div class="page-header" *ngIf="isDataFound">
+    <h3 class="text-primary">Orders List:</h3>
+  </div>
+  <button class="btn btn-danger" (click)="onLogOut()" >LogOut</button>
+
+<br><br><br>
+
+<div>
+  <button class="btn btn-primary add-button" (click)="onAddEdit('ADD',{})">New Order</button>
+</div>
+
+<table class="table table-striped" *ngIf="isDataFound">
+  <thead>
+  <tr  >
+    <th scope="col"*ngFor="let heading of columnNames">{{heading}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of ordersData; index as i">
+    <td>{{i+1}}</td>
+    <td>{{order.order_number}}</td>
+    <td>{{order.due_date.day}}-{{order.due_date.month}}-{{order.due_date.year}}</td>
+    <td>{{order.buyer_name}}</td>
+    <td>{{order.address}}</td>
+    <td>{{order.phone}}</td>
+    <td>{{order.order_total}}</td>
+    <td>
+      <button class="btn btn-primary" (click)="onAddEdit('EDIT',order)" >Edit</button> &nbsp;
+      <button class="btn btn-danger" (click)="onDelete(order)" >Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<!--  -->
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple">
+ <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+</div>
