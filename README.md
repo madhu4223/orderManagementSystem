@@ -9,7 +9,7 @@ Run `npm install` in the downloaded directory.
 
 Then Run `npm start` .
 
-The app will automatically open browser and navigate to `http://localhost:4200/`;
+The app will build and automatically open browser and navigate to `http://localhost:4200/`;
 
 if not just open the browser manually and navigate to `http://localhost:4200/`.
 
