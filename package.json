@@ -36,7 +36,7 @@
     "generate-password": "^1.4.1",
     "http": "0.0.0",
     "moment": "^2.24.0",
-    "mongoose": "^5.3.15",
+    "mongoose": "^5.7.5",
     "ngx-spinner": "^7.0.0",
     "ngx-toastr": "^9.1.1",
     "nodemon": "^1.18.9",
